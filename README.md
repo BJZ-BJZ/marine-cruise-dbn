@@ -1,5 +1,13 @@
 # 邮轮速度状态 DBN 与数据可识别性
 
+## 效果展示
+
+<p align="center">
+  <img src="figures/fig2_cruise_3d.png" width="49%" />
+  <img src="figures/fig1_brier_accuracy.png" width="49%" />
+</p>
+
+
 ## 问题与方法
 
 原研究从邮轮试航风险分析出发，实证部分收紧为双船的可观测速度状态动态，而非事故预测。对 Costa Toscana 与 Carnival Celebration 使用训练船速度三分位阈值，估计一小时时片条件频率，比较速度、速度＋风、速度＋浪、速度＋风浪四种模型。阈值只由训练数据确定；未观测环境条件行退回速度基线，不添加伪计数。
