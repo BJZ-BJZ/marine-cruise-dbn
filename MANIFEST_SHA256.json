@@ -1,0 +1,17 @@
+{
+  "version": "v0.5.0",
+  "files": {
+    ".gitattributes": "86672fc8176f8540a2c4ac1a4bea43cce0defdf44c3377b628a5f9afcdd99f7b",
+    ".github/workflows/verify.yml": "9b3d281af585aec7166a5176609fd61479e990354585d109248adc01fd4e4350",
+    "README.md": "d65723eb52164b7ffe53d784e0bd51c8d1a82fa13e015d3b00960aed0e76d2ec",
+    "RIGHTS.md": "06684470a631e1a5d92526bead33c643f8bc268e06269c4fe9ce1f5129211adc",
+    "data/aggregated_evaluations.json": "4b4ebcf24ec50d51cc00c4eaff91ab72f9ef9c5036c05e60518ba61ac24f5027",
+    "figures/fig1_brier_accuracy.png": "f5355a7e0f109d954cf19c3063f1358047ce0f3492e8080a52bbfabc92e32c6f",
+    "figures/make_figures.py": "a6dc7ac3e9789c40f16eaa58f4f543a0d8d4056ae31801dec7eedd906c0632ac",
+    "requirements.txt": "7bd6b8946940b79948c548c8048e545684b91c8edc9444d8dfc0c8f76a97c0a7",
+    "src/dbn.py": "9a6bf6e338c70c98beca1de15ee9bfcc18c316b1c54d1559b77f566622fa3a8c",
+    "src/demo.py": "9b2a903fc472231f74058b965261d3aa7e10edb85a430d6adf40a91ffd97192c",
+    "src/verify.py": "b00c605679a2a908e99f4d662747e1cc1c0a9065e5c249b1096d292d1e76b607",
+    "tests/test_cruise_dbn.py": "9ae068cb3b74323555fe4e8f9f6a1b67a42dcbe32eb8b586f620a92af4bff944"
+  }
+}
