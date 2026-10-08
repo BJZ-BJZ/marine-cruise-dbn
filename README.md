@@ -40,7 +40,3 @@ Regenerate with `python figures/make_figures.py` (needs `matplotlib`, `pandas`, 
 ![Cruise ship 3D schematic](figures/fig2_cruise_3d.png)
 
 Schematic illustration rendered in Python (matplotlib) - not ANSYS/Fluent/STAR-CCM+ output. Regenerate with `python figures/make_3d_schematic.py` (needs `matplotlib`, `numpy`). The cruise-ship hull and superstructure illustrate the vessel class whose speed states this project predicts from AIS data.
-
-![Innovation: conditional DBN - wind/wave conditioning does not beat the speed-only baseline (identifiability diagnosis).](figures/fig3_brier_models.png)
-
-*Innovation: conditional DBN - wind/wave conditioning does not beat the speed-only baseline (identifiability diagnosis). Regenerate with `python figures/make_innovation_figure.py`.*

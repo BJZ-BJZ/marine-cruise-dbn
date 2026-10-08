@@ -88,5 +88,19 @@ ax.text(215, 8, 8, 'speed / heading', fontsize=10, color='#1f4e79')
 ax.text(-140, -70, D+55, 'cruise ship', fontsize=10, ha='center')
 ax.set_zlim(-12, 78)
 ax.set_xlim(-330, 330)
+import matplotlib.patches as mpatches
+_inset = fig.add_axes([0.71, 0.58, 0.25, 0.28])
+_inset.set_xlim(0, 10); _inset.set_ylim(0, 10); _inset.axis('off')
+def _node(x, y, label):
+    _inset.add_patch(mpatches.Circle((x, y), 1.15, fc='white', ec='#1f4e79', lw=1.6))
+    _inset.text(x, y, label, ha='center', va='center', fontsize=7.5)
+_node(2.5, 5, 'S_t'); _node(7.5, 5, 'S_t+1'); _node(5, 8.6, 'W_t'); _node(5, 1.4, 'V_t')
+for _x0, _y0, _x1, _y1 in [(3.65, 5, 6.35, 5), (3.0, 5.9, 4.3, 7.7), (3.0, 4.1, 4.3, 2.3)]:
+    _inset.annotate('', xy=(_x1, _y1), xytext=(_x0, _y0),
+                    arrowprops=dict(arrowstyle='->', color='#1f4e79', lw=1.3))
+_inset.set_title('Conditional DBN\n(speed | wind, wave)', fontsize=7.5)
+ax.text2D(0.02, 0.96, 'Innovation: conditional dynamic Bayesian network\nWind/wave conditioning: no gain over speed-only baseline',
+    transform=ax.transAxes, fontsize=8.5, va='top', ha='left',
+    bbox=dict(boxstyle='round,pad=0.4', facecolor='white', alpha=0.88))
 finish(ax, str(Path(__file__).parent / 'fig2_cruise_3d.png'),
        'Cruise ship 3D schematic', elev=13, azim=-63)
