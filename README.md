@@ -26,3 +26,9 @@ Brier 越低越好；风浪联合模型在本分析未取得优势。Costa 训�
 ![Brier score and accuracy](figures/fig1_brier_accuracy.png)
 
 Regenerate with `python figures/make_figures.py` (needs `matplotlib`, `pandas`, `numpy`).
+
+### 3D schematic illustration
+
+![Cruise ship 3D schematic](figures/fig2_cruise_3d.png)
+
+Schematic illustration rendered in Python (matplotlib) - not ANSYS/Fluent/STAR-CCM+ output. Regenerate with `python figures/make_3d_schematic.py` (needs `matplotlib`, `numpy`). The cruise-ship hull and superstructure illustrate the vessel class whose speed states this project predicts from AIS data.
